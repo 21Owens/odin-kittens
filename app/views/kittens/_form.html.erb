@@ -1,0 +1,20 @@
+<%= form_with(model: @kitten) do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+
+    <%= f.label :cuteness %>
+    <%= f.text_field :cuteness %>
+
+    <%= f.label :softness %>
+    <%= f.text_field :softness %>
+
+    <%= f.submit %>
+<% end %>
+
+<h1>
+    <%= link_to("home",kittens_path) %>
+</h2>

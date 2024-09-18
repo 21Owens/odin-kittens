@@ -1,0 +1,4 @@
+<%= render "form" %>
+<%= link_to "delete", kitten_path(@kitten),
+        data: { turbo_method: :delete, turbo_confirm: "Delete entry?"} %>
+<%= @kitten.name %>

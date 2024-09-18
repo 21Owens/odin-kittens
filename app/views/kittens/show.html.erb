@@ -1,0 +1,17 @@
+
+<h2>
+    <%= @kitten.name %>
+</h2>
+<h2>
+   Age: <%= @kitten.age %>
+</h2>
+<h1>
+    <%= link_to("Back", kittens_path) %>
+</h1>
+<h1>
+    <%= link_to("edit", edit_kitten_path) %>
+</h1>
+<h1>
+    <%= link_to "delete", kitten_path(@kitten),
+        data: { turbo_method: :delete, turbo_confirm: "Delete entry?"} %>
+</h1>
